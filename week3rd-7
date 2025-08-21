@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+
+class Homee extends StatefulWidget {
+  const Homee({super.key});
+
+  @override
+  State<Homee> createState() => _HomeeState();
+}
+
+class _HomeeState extends State<Homee> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Row(
+        children: [
+          Expanded(
+            flex: 1, //flex
+            child: Container(color: Colors.amber, height: double.infinity),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(color: Colors.blueGrey, height: double.infinity),
+          ),
+        ],
+      ),
+    );
+  }
+}
